@@ -8,7 +8,7 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="m-12 ">
+<body class="m-12" id="body-btn">
   <section>
     <div class="navbar  shadow-sm rounded-sm">
         <div class="navbar-start">
@@ -24,26 +24,26 @@
         
         <div class="navbar-end">
             <img src="assets/checkbox.png" alt="" class="mr-4">
-            <p class="font-bold text-3xl mr-10">23</p>
-          <button class=""><img src="assets/theme-btn.png" alt=""></button>
+            <p class="font-bold text-3xl mr-10" id="event-number">23</p>
+          <button id="click-btn" class=""><img src="assets/theme-btn.png" alt=""></button>
         </div> 
       </div>
   </section>
 
-    <section class="mt-8 flex gap-4 bg-white py-6 px-3">
-      <div class="grid grid-cols-3 gap-4  bg-white shadow-sm py-6 px-3">
-        <div class="flex ml-8">
+    <section class="mt-8 flex gap-4  py-6 px-3">
+      <div class="grid grid-cols-3 gap-4  bg-white shadow-sm py-6 px-3 rounded-sm" id="btn-primary">
+        <div class="flex mr-3 bg-slate-100 px-5 py-4" >
             <img src="assets/checkbox.png" alt="" class="size-6 mt-3 bg-white shadow-sm">
             <div class="ml-4">
                 <h3>Task Assigned </h3>
-                <h1 class="font-bold text-2xl">05</h1>
+                <h1 class="font-bold text-2xl" id="task-number">06</h1>
             </div>
 
         </div>
         <!-- 2........... -->
-        <div class="flex bg-indigo-500 px-10 rounded-sm w-80  ">
+        <div class="flex bg-indigo-500 px-2 rounded-sm w-80  -ml-5 " id="today-page">
             <img src="assets/board.png" alt="" class="">
-            <div class="ml-4">
+            <div class="">
                 <h2 class="text-white mt-4">Discover Something New Today!</h2>
                 
             </div>
@@ -51,7 +51,7 @@
         </div>
         <!-- 3============== -->
 
-        <div class="flex bg-slate-100 px-5 rounded-sm ml-10">
+        <div class="flex bg-slate-100 px-5 rounded-sm ml-5">
             <img src="assets/calender.png" alt="" class="size-6 mt-6 bg-white shadow-sm ">
             <div class="ml-4 mt-3">
                 <h3>Wed ,<br>
@@ -64,12 +64,12 @@
         <div class="card card-dash  bg-slate-100">
             <div class="card-body">
                 <p class="">ShopEase</p>
-              <h2 class="card-title">Fix Mobile Button Issue </h2>
+              <h2 id="heading" class="card-title">Fix Mobile Button Issue </h2>
               <p class="bg-gray-50 shadow-sm px-2 py-2 rounded-sm ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
               <div class="card-actions justify-end">
                 <p class="">Deadline<br><span class="font-bold">21 March 2025</span></p>
-                <button class="btn btn-primary">Completed</button>
+                <button class="btn btn-primary" id="disabled-btn">Completed</button>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@
               <p class="bg-gray-50 shadow-sm px-2 py-2 rounded-sm ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
               <div class="card-actions justify-end">
                 <p class="">Deadline<br><span class="font-bold">21 March 2025</span></p>
-                <button class="btn btn-primary">Completed</button>
+                <button class="btn btn-primary" id="disabled-btnn">Completed</button>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@
               <p class="bg-gray-50 shadow-sm px-2 py-2 rounded-sm ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
               <div class="card-actions justify-end">
                 <p class="">Deadline<br><span class="font-bold">21 March 2025</span></p>
-                <button class="btn btn-primary">Completed</button>
+                <button class="btn btn-primary" id="disabled-btn3">Completed</button>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
               <p class="bg-gray-50 shadow-sm px-2 py-2 rounded-sm ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
               <div class="card-actions justify-end">
                 <p class="">Deadline<br><span class="font-bold">21 March 2025</span></p>
-                <button class="btn btn-primary">Completed</button>
+                <button class="btn btn-primary" id="disabled-btn4">Completed</button>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
               <p class="bg-gray-50 shadow-sm px-2 py-2 rounded-sm ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.</p>
               <div class="card-actions justify-end">
                 <p class="">Deadline<br><span class="font-bold">21 March 2025</span></p>
-                <button class="btn btn-primary">Completed</button>
+                <button class="btn btn-primary" id="disabled-btn5" >Completed</button>
               </div>
             </div>
           </div>
@@ -125,20 +125,20 @@
           <div class="card card-dash   bg-slate-100">
             <div class="card-body">
                 <p class="">Glassdoar</p>
-              <h2 class="card-title">Improve Job searching </h2>
+              <h2 class="card-title" id="comment">Improve Job searching </h2>
               <p class="bg-gray-50 shadow-sm px-2 py-2 rounded-sm ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
               <div class="card-actions justify-end">
                 <p class="">Deadline<br><span class="font-bold">21 March 2025</span></p>
-                <button class="btn btn-primary">Completed</button>
+                <button class="btn btn-primary" id="disabled-btn6">Completed</button>
               </div>
             </div>
           </div>
 
         </div>
          <!-- 10 -->
-        <div class="card  w-9/12  bg-white shadow-sm">
-          <div class="card-body items-center text-center">
+        <div class="card  w-9/12  bg-white shadow-sm" >
+          <div class="card-body items-center text-center ">
              <div class="flex gap-3">
               <img src="assets/activity.png" alt="" class="size-6">
               <h2 class="card-title">Activity Log</h2>
@@ -148,6 +148,16 @@
             </div>
           </div>
         </div>
+
+        
     </section>
+
+
+    
+
+    <script src="js/bord.js"></script>
+    <script src="js/main.html"></script>
+    <script src="js/button.js"></script>
+    <script src="js/clear.js"></script>
 </body>
 </html>

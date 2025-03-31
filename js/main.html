@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Html</title>
+<!-- DasyUI CDN Link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="m-12">
+    <section>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+              </div>
+              
+            </div>
+            <img src="../assets/logo.png" alt="" class="size-8">
+            <a class=" text-xl">Dev<span class="font-bold">Board</span></a>
+          </div>
+        
+        <div class="navbar-end" id="back-btn">
+          <a class="btn btn-primary">Back to Desk</a>
+        </div>
+      </div>
+    </section>
+    <h1 class="text-center mt-8 font-bold text-3xl">Blogs</h1>
+<section>
+    <!-- question-1 -->
+    <h3 class="font-bold mt-4 shadow-sm">Question-1: What are the different ways to select an element in the DOM?</h3>
+    <p class="font-medium ml-6">Ans:<br>
+                1.getElementsByTagName()
+                2.getElementsByClassName()<br>
+                3.getElementById()<br>
+                4.querySelector()<br>
+                5.querySelectorAll()
+    </p>
+    
+
+    <!-- question-2 -->
+    <h3 class="font-bold mt-4 shadow-sm">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+    <p class="font-medium ml-6">Ans:<br>
+                                InnerText grabs just the rendered text of an HTML element.<br>
+                                 This will actually get or set the Inner Content of an HTML element.<br>
+                                 This will return the text content with spacing similar to InnerHTMl, but without  any inner element tags.
+    </p>
+
+    <!-- question-3 -->
+    <h3 class="font-bold mt-4 shadow-sm">Question-3: What is event delegation in the DOM?</h3>
+    <p class="font-medium ml-6">Ans:<br>
+      Events triggered on an element propagate up the DOM tree to the element's parent it's ancestors, and on up until the root element html.
+
+
+
+
+</p>
+
+      <!-- question-4 -->
+    <h3 class="font-bold mt-4 shadow-sm">Question-4: What is event bubbling in the DOM?</h3>
+    <p class="font-medium ml-6">Ans:<br>
+      In the DOM, event bubbling is a mechanism where an event triggered on a child element propagates upwards through its parent and ancestor elements   
+    
+    </p>
+
+     <!-- question-5 -->
+     <h3 class="font-bold mt-4 shadow-sm">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+     <p class="font-medium ml-6">Ans:<br>
+
+      JavaScript, you can use methods like createElement , appendChild , removeChild , and properties like innerHTML and textContent 
+     </p>
+
+
+  
+</section>
+</body>
+</html>
